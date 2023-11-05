@@ -1,0 +1,161 @@
+.imgs{
+    object-fit: cover;
+    transform: all .4s ease-in-out;
+    filter:grayscale(100%);
+    border-radius:14px ;
+    height: 600px;
+    width: 400px;
+    background-color:black;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+img:hover{
+    filter: grayscale(0);
+}
+.left-header{
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-shape{
+    transition:all .4s ease-in-out ;
+    width:40rem;
+    height: 800px;
+    background-color: #27AE60;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0 0, 52% 0, 80% 100%, 7% 100%);;
+}
+.image{
+    position: relative;
+    align-items: center;
+    height:600px;
+    width: 500px;
+    background-color: black;
+    transition: all .4s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.global-container{
+    width:97vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.right-header{
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vw;
+    padding-left: 2vw;
+}
+.name{
+    font-size: 3rem;
+    
+}
+.paragraf{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 1.5rem 0;
+    line-height: 2rem;
+}
+.name{
+    color: white;
+}
+.bb{
+   color:  #27AE60; 
+}
+.main-btn{
+    border-radius: 35px;
+    font-weight: 600;
+    position: relative;
+    left: 1rem;
+    top:6rem;
+    border: 1px solid #27AE60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 3px;
+ }
+.btn-icon{
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #27AE60;
+    color: white;
+
+}
+
+.btn-text{
+    color: white;
+    padding: 10px;
+}
+.btn-con{
+    display: flex;
+    align-self: flex-start;
+}
+.btn-con:hover{
+    transform: scale(1.1);
+}
+.main-btn:hover{
+    color: #27AE60;
+    background-color: white;
+    .btn-icon{
+        color: #27AE60;
+    }
+    .btn-text{
+        color: #27AE60;
+    }
+    border: none;
+}
+a:link {
+    text-decoration: none;
+}
+.education{
+    color:#27AE60;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.text{
+ text-transform: uppercase;
+ color: white;
+ font-size: 1.5rem;
+}
+.edu-div{
+    position: relative;
+    top:10rem;
+}
+@media screen and (max-width: 500px) {
+    .global-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content: center;
+    }
+    .left-header{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        top:20rem;
+        left: 15rem;
+        width: 90%;
+    }
+    .right-header{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top:75rem;
+        right: 8rem;
+        width: 90%;
+    }
+}

@@ -1,0 +1,38 @@
+<div class="global-nav-bar">
+  <div class="overlap">
+    <h1 class="first-cv">My-CV</h1>
+    <h1 class="second-cv">My-<span class="cv">CV</span></h1>
+  </div>
+  <div class="navDiv">
+    <button
+      class="nav-link"
+      routerLink="about"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{
+        exact: true
+      }"
+    >
+      About
+    </button>
+    <button
+      class="nav-link"
+      routerLink="summary"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{
+        exact: true
+      }"
+    >
+      Summary
+    </button>
+    <button
+      class="nav-link"
+      routerLink="contact"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{
+        exact: true
+      }"
+    >
+      Contact
+    </button>
+  </div>
+</div>

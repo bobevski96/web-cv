@@ -1,0 +1,167 @@
+.main-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 97vw;
+  height: 85vh;
+
+}
+//Stat bars
+.left-container {
+  width:25vw;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  bottom: 10rem;
+
+}
+.about-stats {
+  position: relative;
+  right: -50%;
+}
+.stat-title {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  bottom: 5rem;
+
+}
+.progress-bars {
+  position: relative;
+  width: 25rem;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.prog-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.progress-con {
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prog-title {
+  color: #b2becd;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: #454e56;
+  margin-left: 1rem;
+  position: relative;
+}
+.html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 80%;
+}
+.css {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 70%;
+}
+.js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 80%;
+}
+.angular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 50%;
+}
+.nodeExpress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 60%;
+}
+
+.reactjs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #27ae60;
+  width: 40%;
+}
+
+// Img side
+.right-main {
+  width:25vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.img-tag {
+  width: 400px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+  .progress-bars {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    flex-direction: column;
+    position: relative;
+    top: 60rem;
+  }
+  .stat-title{
+    position: relative;
+    top:35rem;
+    width: 200px;    
+  }
+  .left-container {
+    position: relative;
+  }
+
+  .right-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    top:75rem;
+    right: 10rem;
+    .img-tag {
+      width: 400px;
+    }
+  }
+}
